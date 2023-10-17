@@ -18,6 +18,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
+	{'preservim/nerdtree'},
   {'folke/tokyonight.nvim'},
     {'williamboman/mason.nvim'},
   {'williamboman/mason-lspconfig.nvim'},
@@ -115,3 +116,6 @@ cmp.setup({
     ['<C-d>'] = cmp.mapping.scroll_docs(4),
   })
 })
+
+
+
