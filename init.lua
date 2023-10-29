@@ -1,6 +1,7 @@
 local lazypath = vim.fn.stdpath('data') .. '/lazy/lazy.nvim'
 local uv = vim.uv or vim.loop
 
+require("sobresaliente.init")
 -- Auto-install lazy.nvim if not present
 if not uv.fs_stat(lazypath) then
   print('Installing lazy.nvim....')
